@@ -55,6 +55,7 @@ ENV DB_PASSWD=weakPassword \
 VOLUME /opt/jumpserver/data
 VOLUME /opt/coco/keys
 VOLUME /var/lib/mysql
+VOLUME /var/log/supervisor
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 

@@ -12,12 +12,22 @@ fast deploy [jumpserver](https://github.com/jumpserver/jumpserver) by an all in 
 
 ### environment
 
-* SECRET_KEY
+* DB_PASSWD = weakPassword
 
-* BOOTSTRAP_TOKEN
+* SECRET_KEY = 2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x
 
-* DEBUG
+* BOOTSTRAP_TOKEN = nwv4RdXpM82LtSvmV 
 
-* LOG_LEVEL
+* DEBUG = ''
+
+* LOG_LEVEL = ERROR
 
 ### volume
+
+* /opt/jumpserver/data
+
+* /opt/coco/keys
+
+* /var/lib/mysql
+
+* /var/log/supervisor
