@@ -15,7 +15,7 @@ RUN  apt-get update \
 
 
 RUN cd /opt  && git clone https://github.com/jumpserver/jumpserver.git \
-    && git checkout ${JUMPSERVER_VER} \
+    && cd /opt/jumpserver && git checkout ${JUMPSERVER_VER} \
     && cd /opt/jumpserver/requirements && DEBIAN_FRONTEND=noninteractive apt-get -y install $(cat deb_requirements.txt) \
     && ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && dpkg-reconfigure --frontend noninteractive tzdata
