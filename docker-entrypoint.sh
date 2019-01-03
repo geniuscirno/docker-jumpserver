@@ -1,6 +1,5 @@
 #! /bin/bash
 set -e
-set -x
 
 if [[ "$1" == "supervisord" ]]; then
     socket="/var/run/mysqld/mysqld.sock"
