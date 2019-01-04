@@ -36,6 +36,10 @@ RUN cd /tmp && wget https://github.com/jumpserver/luna/releases/download/${LUNA_
     && chown -R root:root /opt/luna \
     && rm -rf /tmp/luna.tar.gz
 
+RUN mkdir -p /var/lib/mysql /var/run/mysqld \
+    && chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \
+    && chmod 777 /var/run/mysqld
+
 COPY config.py /opt/jumpserver/config.py
 COPY config.py /opt/coco/conf.py
 COPY jumpserver.conf /etc/nginx/sites-available/default
@@ -45,7 +49,7 @@ COPY docker-entrypoint.sh /usr/local/bin
 ENV DB_PASSWD=weakPassword \
     SECRET_KEY='2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x' \
     BOOTSTRAP_TOKEN='nwv4RdXpM82LtSvmV' \
-    DEBUG=1 \
+    DEBUG=0 \
     LOG_LEVEL=ERROR
 
 VOLUME /opt/jumpserver/data
