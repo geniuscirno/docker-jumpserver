@@ -2,6 +2,10 @@
 set -e
 
 if [[ "$1" == "supervisord" ]]; then
+    mkdir -p /var/lib/mysql /var/run/mysqld \
+    && chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \
+    && chmod 777 /var/run/mysqld
+
     socket="/var/run/mysqld/mysqld.sock"
     mysqld --skip-networking --socket="${socket}" &
     pid="$!"

@@ -36,10 +36,6 @@ RUN cd /tmp && wget https://github.com/jumpserver/luna/releases/download/${LUNA_
     && chown -R root:root /opt/luna \
     && rm -rf /tmp/luna.tar.gz
 
-RUN mkdir -p /var/lib/mysql /var/run/mysqld \
-    && chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \
-    && chmod 777 /var/run/mysqld
-
 COPY config.py /opt/jumpserver/config.py
 COPY config.py /opt/coco/conf.py
 COPY jumpserver.conf /etc/nginx/sites-available/default
