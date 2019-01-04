@@ -14,11 +14,11 @@ fast deploy [jumpserver](https://github.com/jumpserver/jumpserver) by an all in 
 
 * DB_PASSWD = weakPassword
 
-* SECRET_KEY = 2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x
+* SECRET_KEY = '2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x'
 
-* BOOTSTRAP_TOKEN = nwv4RdXpM82LtSvmV 
+* BOOTSTRAP_TOKEN = 'nwv4RdXpM82LtSvmV'
 
-* DEBUG = ''
+* DEBUG = 0
 
 * LOG_LEVEL = ERROR
 

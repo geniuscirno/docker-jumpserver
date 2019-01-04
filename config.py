@@ -37,7 +37,7 @@ class Config:
 
     # Development env open this, when error occur display the full process track, Production disable it
     # DEBUG 模式 开启DEBUG后遇到错误时可以看到更多日志
-    DEBUG = bool(os.environ.get("DEBUG")) or False
+    DEBUG = int(os.environ.get("DEBUG")) == 1 or False
 
     # DEBUG, INFO, WARNING, ERROR, CRITICAL can set. See https://docs.djangoproject.com/en/1.10/topics/logging/
     # 日志级别

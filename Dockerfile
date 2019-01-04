@@ -47,9 +47,9 @@ COPY supervisord.conf /etc/supervisor/supervisord.conf
 COPY docker-entrypoint.sh /usr/local/bin
 
 ENV DB_PASSWD=weakPassword \
-    SECRET_KEY=2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x \
-    BOOTSTRAP_TOKEN=nwv4RdXpM82LtSvmV \
-    DEBUG='' \
+    SECRET_KEY='2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x' \
+    BOOTSTRAP_TOKEN='nwv4RdXpM82LtSvmV' \
+    DEBUG=1 \
     LOG_LEVEL=ERROR
 
 VOLUME /opt/jumpserver/data
