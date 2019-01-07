@@ -2,6 +2,10 @@
 
 fast deploy [jumpserver](https://github.com/jumpserver/jumpserver) by an all in one docker image.
 
+## Supported tags and respective Dockerfile links   
+
+* [v1.4.6 ,latest (Dockerfile)](https://github.com/geniuscirno/docker-jumpserver/blob/v1.4.6/Dockerfile)
+
 ## Usage
 
 ### startup
