@@ -4,7 +4,8 @@ fast deploy [jumpserver](https://github.com/jumpserver/jumpserver) by an all in 
 
 ## Supported tags and respective Dockerfile links   
 
-* [`v1.5.0` ,`latest` (Dockerfile)](https://github.com/geniuscirno/docker-jumpserver/blob/v1.5.0/Dockerfile)
+* [`v1.5.2` ,`latest` (Dockerfile)](https://github.com/geniuscirno/docker-jumpserver/blob/v1.5.0/Dockerfile)
+* [`v1.5.2`, (Dockerfile)](https://github.com/geniuscirno/docker-jumpserver/blob/v1.5.0/Dockerfile)
 * [`v1.4.6` (Dockerfile)](https://github.com/geniuscirno/docker-jumpserver/blob/v1.4.6/Dockerfile)
 
 ## Usage

@@ -1,8 +1,10 @@
 FROM ubuntu:18.04
 
-ENV JUMPSERVER_VER=1.5.0 \
-    LUNA_VER=1.4.6 \
-    GUACAMOLE_VER=0.9.14
+ENV http_proxy ""
+ENV https_proxy ""
+
+ENV JUMPSERVER_VER=1.5.2 \
+    LUNA_VER=1.5.2 
 
 RUN  apt-get update \
     && apt-get -y install wget gcc libffi-dev git libmysqlclient-dev language-pack-zh-hans \
